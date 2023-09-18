@@ -1,0 +1,4 @@
+[tool.ruff]
+line-length = 90
+exclude = [".venv"]
+ignore = ["E501"]

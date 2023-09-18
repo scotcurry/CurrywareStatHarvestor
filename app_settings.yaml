@@ -1,0 +1,5 @@
+settings:
+  firebase_authentication_file: "currywareff-firebase-adminsdk.json"
+  firebase_database_name: "https://currywareff-default-rtdb.firebaseio.com/"
+  oauth_settings_path: "db_root/oauth_info"
+  yahoo_info_path: "db_root/yahoo_info"
