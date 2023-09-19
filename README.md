@@ -33,3 +33,7 @@ CurrywareStatHarvestor
     |  
     |---- tests  
 
+## Note
+
+There is an authentication JSON file that is not stored in the repository.  The google_build_authentication.py uses
+Github Actions secrets. If running locally it pulls the private key from a file.
