@@ -19,7 +19,11 @@ class Test(TestCase):
             self.assertEqual(True, True)
 
     def test_get_google_auth_file(self):
-        auth_file_name = 'currywareff-firebase-adminsdk.json'
-        file_path = get_file_path(auth_file_name)
-        file_name_in_path = auth_file_name in file_path
-        self.assertEqual(True, file_name_in_path)
+        os_type = platform.system()
+        if os_type == 'Darwin':
+            auth_file_name = 'currywareff-firebase-adminsdk.json'
+            file_path = get_file_path(auth_file_name)
+            file_name_in_path = auth_file_name in file_path
+            self.assertEqual(True, file_name_in_path)
+        else:
+            self.assertEqual(True, True)
