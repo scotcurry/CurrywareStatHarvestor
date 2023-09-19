@@ -7,7 +7,7 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 
-from classes.settings.app_settings_handler import load_app_settings, get_file_path
+# from classes.settings.app_settings_handler import load_app_settings, get_file_path
 from classes.authentication.google_build_authentication import \
     build_json_from_environment_variables
 
